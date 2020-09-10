@@ -3,11 +3,15 @@ name = "pypi"
 url = "https://pypi.org/simple"
 verify_ssl = true
 
+[scripts]
+share = "python ./share_war.py -d Chrome"
+
 [dev-packages]
+jupyter = "*"
 
 [packages]
 numpy = "==1.15.2"
 selenium = "==3.141.0"
 
 [requires]
-python_version = "3.7"
+python_version = "3"
